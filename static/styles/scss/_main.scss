@@ -1,0 +1,146 @@
+@import "compass";
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap');
+* {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    font-family: "SF Pro Text", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+}
+
+body {
+    width: 100%;
+    text-align: center;
+    footer {
+        width: 100%;
+        margin: 64px 0px;
+        text-align: center;
+        display: block;
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul li {
+    font-size: 16px;
+}
+
+a {
+    font-size: inherit;
+    color: #000000;
+    text-decoration: none;
+    &.decorate {
+        color: #4169e1;
+        border-bottom: dotted 2px #4169e1;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 32px auto 8px auto;
+    padding: 8px;
+    display: block;
+    clear: both;
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+#title {
+    margin: 24px 0px 16px 0px;
+    padding: 0px 8px;
+    border-bottom: solid 1px black;
+    text-align: left;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: calc(80% - 32px);
+        margin: 0px 16px;
+        display: block;
+        float: left;
+    }
+    #sidebar {
+        width: calc(20% - 32px);
+        margin: 0px 16px;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
+    ul li {
+        font-size: 14px;
+    }
+    .container {
+        width: calc(100% - 16px);
+        margin: 0px 8px;
+    }
+    .sidebar {
+        width: calc(100% - 16px);
+        margin: 0px 8px;
+    }
+}

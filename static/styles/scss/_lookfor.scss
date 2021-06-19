@@ -1,0 +1,166 @@
+@import "compass";
+@charset "UTF-8";
+@media screen and (min-width: 1024px) {
+    h3,
+    h4,
+    h5 {
+        margin: 16px 0px;
+    }
+    p {
+        margin: 16px 32px;
+    }
+    .check_lineup a {
+        margin: 8px;
+        padding: 8px;
+        background: linear-gradient(#4169e1, #4169e1);
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 1) 4px 4px 8px;
+        font-size: 14px;
+        color: white;
+        display: inline-block;
+        color: white;
+        transition: 0.1s;
+        &:hover {
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 1) 2px 2px 4px;
+            transform: scale(0.995, 0.995);
+        }
+    }
+    .sub-title {
+        margin: 32px;
+        text-align: left;
+    }
+    .auction {
+        width: calc(100% - 128px);
+        margin: 16px 0px;
+        padding: 32px 64px;
+        text-align: left;
+        border: solid 2px #a52a2a;
+        background-color: #ffa07a;
+    }
+    .car-flow {
+        width: calc(100% - 128px);
+        margin: 16px 0px;
+        padding: 32px 64px;
+        text-align: left;
+        border: solid 2px #000000;
+        background-color: #87cefa;
+        .caution {
+            text-align: left;
+            a {
+                border-bottom: dashed 2px #000000;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .check_lineup {
+        margin: 8px;
+        padding: 8px;
+        background: linear-gradient(#0000ff, #0000cc);
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.8) 4px 4px 8px;
+        font-size: 14px;
+        color: white;
+        display: inline-block;
+    }
+    .check_lineup a {
+        text-decoration: none;
+        color: white;
+    }
+    .sub-title {
+        text-align: left;
+    }
+    .auction {
+        width: auto;
+        height: auto;
+        margin: 16px 0px;
+        padding: 32px;
+        text-align: left;
+        border: solid 2px #a52a2a;
+        background-color: #ff6347;
+    }
+    .auction h3 {
+        margin: 8px 0px;
+    }
+    .auction p {
+        text-indent: 1em;
+    }
+    .car-flow {
+        width: auto;
+        height: auto;
+        margin: 16px 0px;
+        padding: 32px;
+        text-align: left;
+        border: solid 2px black;
+        background-color: #6495ed;
+    }
+    .car-flow h3 {
+        margin: 12px 0px;
+    }
+    .car-flow h4 {
+        margin: 32px 0px 8px 0px;
+    }
+    .car-flow p {
+        text-indent: 2em;
+    }
+    .caution {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .check_lineup {
+        margin: 8px;
+        padding: 8px;
+        background: linear-gradient(#0000ff, #0000cc);
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.8) 4px 4px 8px;
+        font-size: 14px;
+        display: inline-block;
+    }
+    .check_lineup a {
+        text-decoration: none;
+        color: white;
+    }
+    .sub-title {
+        text-align: left;
+    }
+    .auction {
+        width: auto;
+        height: auto;
+        margin: 8px 0px;
+        padding: 24px;
+        text-align: left;
+        border: solid 2px #a52a2a;
+        background-color: #ff6347;
+    }
+    .auction h3 {
+        margin: 8px 0px;
+    }
+    .auction p {
+        text-indent: 1em;
+    }
+    .car-flow {
+        width: auto;
+        height: auto;
+        margin: 8px 0px;
+        padding: 24px;
+        text-align: left;
+        border: solid 2px black;
+        background-color: #6495ed;
+    }
+    .car-flow h3 {
+        margin: 12px 0px;
+    }
+    .car-flow h4 {
+        margin: 32px 0px 8px 0px;
+    }
+    .car-flow p {
+        text-indent: 1em;
+    }
+    .caution {
+        text-align: center;
+    }
+}

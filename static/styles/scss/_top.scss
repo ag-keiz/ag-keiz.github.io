@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 1024px) {
+  #theme {
+    width: 100%;
+    margin: 32px 0px 16px 0px;
+    display: block;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  #topCars {
+    margin: 32px -24px;
+
+    .TopCarInfo {
+      width: calc(100% - 16px);
+      margin: 8px;
+      text-align: left;
+      display: block;
+
+      .TopCarName {
+        margin: 16px 0px;
+        font-weight: 600;
+      }
+
+      .TopCarMainImage {
+        width: calc(50% - 20px);
+        margin: 6px 0px;
+        display: inline-block;
+        vertical-align: middle;
+        transition: 0.3s;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .TopCarDetailImages {
+        width: calc(50% - 8px);
+        margin: 2px;
+        display: inline-block;
+        vertical-align: middle;
+
+        .TopCarDetailImage {
+          width: calc(50% - 8px);
+          margin: 2px;
+          display: inline-block;
+          vertical-align: middle;
+          transition: 0.3s;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    #moreCar {
+      transition: 0.3s;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      h6 {
+        margin: 32px 0px;
+      }
+    }
+  }
+
+  #instagramEmbed {
+    position: relative;
+    width: 50%;
+    height: 0;
+    padding-top: 100%;
+    margin: 16px -12px;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #sidebar {
+    ul {
+      margin: 84px -40px 32px auto;
+
+      li {
+        width: 80%;
+        margin: 32px auto;
+        list-style: none;
+        transition: 0.3s;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(0.99, 0.99);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #theme {
+    width: 100%;
+    margin: 16px 0px;
+
+    img {
+      margin-top: 16px;
+    }
+  }
+
+  #newInfo,
+  #covid19Attention {
+    width: 100%;
+    margin: 16px 0px;
+    text-align: left;
+
+    a {
+      font-size: 14px;
+    }
+  }
+
+  #topCars {
+    margin: 16px -8px;
+
+    .TopCarInfo {
+      width: calc(100%);
+      margin: 24px 0px;
+      text-align: left;
+
+      .CarName {
+        margin: 8px 0px;
+        font-weight: 600;
+      }
+    }
+
+    #moreCar h6 {
+      margin: 32px 0px;
+    }
+  }
+
+  #instagramEmbed {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    margin: 16px 0px;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #sidebar {
+    ul {
+      width: 100%;
+      margin: 32px auto;
+      text-align: center;
+
+      li {
+        width: calc(50% - 16px);
+        margin: 32px 4px;
+        list-style: none;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }
+}
